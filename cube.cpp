@@ -148,7 +148,7 @@ int main()
         }
         
         // Draw
-        printf("\x1b[2J\x1b[H"); // 清除
+        printf("\x1b[H"); // 回到左上角 // 清除
         initCanva(canva); 
         drawLine(projectedPoint[0], projectedPoint[1],canva);
         drawLine(projectedPoint[0], projectedPoint[2],canva);
